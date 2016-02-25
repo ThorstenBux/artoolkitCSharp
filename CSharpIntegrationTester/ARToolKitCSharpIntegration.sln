@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntegrationTester", "ConsoleApplication1\CSharpIntegrationTester.csproj", "{22080473-7B7D-4189-A257-DE288D3A7B9D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59E3651B-2EC3-4419-8208-FA3B45CA0C5F} = {59E3651B-2EC3-4419-8208-FA3B45CA0C5F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARWrapperCSharpIntegration", "..\ARWrapperCSharpIntegration\ARWrapperCSharpIntegration.csproj", "{59E3651B-2EC3-4419-8208-FA3B45CA0C5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22080473-7B7D-4189-A257-DE288D3A7B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22080473-7B7D-4189-A257-DE288D3A7B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22080473-7B7D-4189-A257-DE288D3A7B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22080473-7B7D-4189-A257-DE288D3A7B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E3651B-2EC3-4419-8208-FA3B45CA0C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E3651B-2EC3-4419-8208-FA3B45CA0C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E3651B-2EC3-4419-8208-FA3B45CA0C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E3651B-2EC3-4419-8208-FA3B45CA0C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -36,10 +36,8 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Runtime.InteropServices;
+using System.Text;
 
 public class ARNativePlugin
 {
@@ -70,8 +68,12 @@ public class ARNativePlugin
 	[DllImport(LIBRARY_NAME, CallingConvention=CallingConvention.Cdecl)]
 	[return: MarshalAsAttribute(UnmanagedType.I1)]
     internal static extern bool arwShutdownAR();
-	
-	[DllImport(LIBRARY_NAME, CallingConvention=CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+
+    [DllImport(LIBRARY_NAME, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+    [return: MarshalAsAttribute(UnmanagedType.I1)]
+    internal static extern bool arwStartRunning(string vconf, string cparaName, float nearPlane, float farPlane);
+
+    [DllImport(LIBRARY_NAME, CallingConvention=CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
 	[return: MarshalAsAttribute(UnmanagedType.I1)]
     internal static extern bool arwStartRunningB(string vconf, byte[] cparaBuff, int cparaBuffLen, float nearPlane, float farPlane);
 	

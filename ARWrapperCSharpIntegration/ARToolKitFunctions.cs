@@ -36,11 +36,15 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Runtime.InteropServices;
+using System.Text;
 
+/// <summary>
+/// This class makes the functions of the ARWrapper accessible in C#. For function documentation please 
+/// refer to the ARToolKitWrapperExportedAPI.h file located in %ARTOOLKIT5_ROOT%/include/ARWrapper.
+/// For the implementation the start point is the coresponding ARToolKitWrapperExportedAPI.cpp file located in 
+/// %ARTOOLKIT5_ROOT%/lib/SRC/ARWrapper
+/// </summary>
 public class ARToolKitFunctions
 {
 	[NonSerialized]
@@ -129,13 +133,37 @@ public class ARToolKitFunctions
 		if (ok) inited = false;
 		return ok;
 	}
-	
-	public  bool arwStartRunningB(string vconf, byte[] cparaBuff, int cparaBuffLen, float nearPlane, float farPlane)
+
+    /**
+     * Initialises and starts video capture.
+     * @param vconf		The video configuration string
+     * @param cparaName	The camera parameter file, which is used to form the projection matrix
+     * @param nearPlane	The distance to the near plane of the viewing frustum formed by the camera parameters.
+     * @param farPlane	The distance to the far plane of the viewing frustum formed by the camera parameters.
+     * @return			true if successful, false if an error occurred
+     * @see				arwStopRunning()
+     */
+    public bool arwStartRunning(string vconf, string cparaName, float nearPlane, float farPlane)
+    {
+        return ARNativePlugin.arwStartRunning(vconf, cparaName, nearPlane, farPlane);
+    }
+
+    /**
+     * Initialises and starts video capture.
+     * @param vconf		The video configuration string
+     * @param cparaBuff	A string containing the contents of a camera parameter file, which is used to form the projection matrix.
+     * @param cparaBuffLen	Number of characters in cparaBuff.
+     * @param nearPlane	The distance to the near plane of the viewing frustum formed by the camera parameters.
+     * @param farPlane	The distance to the far plane of the viewing frustum formed by the camera parameters.
+     * @return			true if successful, false if an error occurred
+     * @see				arwStopRunning()
+     */
+    public bool arwStartRunningB(string vconf, byte[] cparaBuff, int cparaBuffLen, float nearPlane, float farPlane)
 	{
 		 return ARNativePlugin.arwStartRunningB(vconf, cparaBuff, cparaBuffLen, nearPlane, farPlane);
 	}
-	
-	public  bool arwStartRunningStereoB(string vconfL, byte[] cparaBuffL, int cparaBuffLenL, string vconfR, byte[] cparaBuffR, int cparaBuffLenR, byte[] transL2RBuff, int transL2RBuffLen, float nearPlane, float farPlane)
+
+    public bool arwStartRunningStereoB(string vconfL, byte[] cparaBuffL, int cparaBuffLenL, string vconfR, byte[] cparaBuffR, int cparaBuffLenR, byte[] transL2RBuff, int transL2RBuffLen, float nearPlane, float farPlane)
 	{
 		return ARNativePlugin.arwStartRunningStereoB(vconfL, cparaBuffL, cparaBuffLenL, vconfR, cparaBuffR, cparaBuffLenR, transL2RBuff, transL2RBuffLen, nearPlane, farPlane);
 	}
@@ -399,8 +427,17 @@ public class ARToolKitFunctions
 		 return ARNativePlugin.arwGetNFTMultiMode();
 	}
 
-
-	public  int arwAddMarker(string cfg)
+    /// <summary>
+    /// Takes the marker configuration string
+    /// </summary>
+    /// <param name="cfg">Sample configurations:
+    /// single;data/hiro.patt;80
+    /// single_buffer;80;buffer=234 221 237...
+    /// single_barcode;0;80
+    /// multi;data/multi/marker.dat
+    /// nft;data/nft/pinball</param>
+    /// <returns> marker id for further usage</returns>
+    public int arwAddMarker(string cfg)
 	{
 		 return ARNativePlugin.arwAddMarker(cfg);
 	}

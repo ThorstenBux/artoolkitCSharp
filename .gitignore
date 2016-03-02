@@ -1,0 +1,10 @@
+/**/Debug/*.manifest
+*.cache
+/**/Debug/TemporaryGeneratedFile_*
+*.sdf
+*.opendb
+.vs
+*.exe
+*.pdb
+*.FileListAbsolute.txt
+ARWrapperCSharpIntegration/*/Debug/ARWrapperCSharpIntegration.dll

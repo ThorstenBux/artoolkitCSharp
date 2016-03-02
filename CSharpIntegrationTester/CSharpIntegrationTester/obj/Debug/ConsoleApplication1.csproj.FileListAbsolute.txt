@@ -1,8 +1,0 @@
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ARWrapperCSharpIntegration.dll
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ARWrapperCSharpIntegration.pdb

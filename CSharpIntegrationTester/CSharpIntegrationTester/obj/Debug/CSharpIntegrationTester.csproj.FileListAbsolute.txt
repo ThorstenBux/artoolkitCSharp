@@ -1,1 +1,0 @@
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\CSharpIntegrationTester.exe.config

@@ -1,4 +1,0 @@
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ARWrapperCSharpIntegration\bin\Debug\ARWrapperCSharpIntegration.dll
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ARWrapperCSharpIntegration\bin\Debug\ARWrapperCSharpIntegration.pdb
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ARWrapperCSharpIntegration\obj\Debug\ARWrapperCSharpIntegration.dll
-Y:\DAQRI\VS2015\Projects\ConsoleApplication1\ARWrapperCSharpIntegration\obj\Debug\ARWrapperCSharpIntegration.pdb

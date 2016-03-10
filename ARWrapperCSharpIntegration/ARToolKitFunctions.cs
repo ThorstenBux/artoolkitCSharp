@@ -377,7 +377,11 @@ public class ARToolKitFunctions
 		 return ARNativePlugin.arwGetLabelingMode();
 	}
 
-	public  void arwSetBorderSize(float size)
+    /**
+    @param size specify the width of the pattern border, as a percentage of the marker width. 
+                If you have a marker with 10cm width and set border to 0.5 you state that you have a border of 5cm meaning 2.5cm on each side.
+    **/
+    public void arwSetBorderSize(float size)
 	{
 		 ARNativePlugin.arwSetBorderSize(size);
 	}

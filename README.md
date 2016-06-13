@@ -8,3 +8,4 @@ This simple library integrates the ARWrapper into a C# library. The result is an
 		- Open the sample project (CSharpIntegrationTester)
 		-- The sample alreay integrates the C# library. The C# library automatically searches for the environment variables ARTOOLKIT5_ROOT and locates the ARToolKit-Wrapper-DLL.
 		- Run the CSharpIntegrationTester project and you should see the version number of ARToolKit5 in a command line window.
+cccc
